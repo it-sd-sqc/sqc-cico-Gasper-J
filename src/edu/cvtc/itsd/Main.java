@@ -49,11 +49,15 @@ public class Main {
       }
     }
 
+    private boolean isNumericalInput(String input) {
+      return input.matches("[0-9]+");
+    }
+
     @Override
     public void replace(FilterBypass fb, int offset, int lengthToDelete, String stringToAdd, AttributeSet attr)
         throws BadLocationException
     {
-      if (fb.getDocument() != null) {
+      if (stringToAdd.isEmpty() || fb.getDocument() != null && isNumericalInput(stringToAdd)) {
         super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
       }
       else {
