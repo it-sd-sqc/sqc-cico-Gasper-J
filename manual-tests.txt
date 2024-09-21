@@ -11,6 +11,7 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 * The status panel should appear after step 2.
 * The main panel should appear after step 3.
 
+
 # Module 2: Sample test for invalid card numbers.
 
 ## Test steps
@@ -22,6 +23,7 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 * The error panel should appear after step 2.
 * The main panel should appear after step 3.
 
+
 # Module 2: Help users recognize, diagnose, and recover from errors
 
 ## Test steps
@@ -30,6 +32,7 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 
 ## Expected results
 * The panel should display "Please show your card to staff to validate." after step 2.
+
 
 # Module 2: Help and documentation
 
@@ -52,6 +55,7 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 * Should display "Checked IN" after step 2.
 * Should display "Checked OUT" after step 4.
 
+
 # Module 3: Match between system and the real world
 
 ## Test steps
@@ -62,3 +66,11 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 * Should display "Developer" for the user name.
 
 
+# Module 4: Filter user input for chacaters
+
+## Test steps
+1. Build and run CiCo.
+2. Enter 12cd.
+
+## Expected results
+* Should ignore non-numerical input and display "12".
