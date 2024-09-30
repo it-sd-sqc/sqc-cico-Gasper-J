@@ -74,3 +74,12 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 
 ## Expected results
 * Should ignore non-numerical input and display "12".
+
+# Module 5: Change close button action
+
+## Test steps
+1. Build and run CiCo.
+2. Click exit button.
+
+## Expected results
+* Shell should say "Clean shutdown".
